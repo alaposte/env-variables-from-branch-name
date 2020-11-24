@@ -1,0 +1,15 @@
+name: 'Exports env variables'
+description: 'Exports env variables using branch name (master, develop ...)'
+inputs:
+  key:
+    description: 'The variable to export (prefix)'
+    required: true
+outputs:
+  variable:
+    description: 'The full variable name that will be used later'
+branding:
+  icon: 'git-branch'
+  color: 'yellow'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

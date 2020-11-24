@@ -1,0 +1,35 @@
+{
+  "name": "env-variables-from-branch-name",
+  "version": "1.0.0",
+  "description": "Exports env variables using branch name",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "lint": "eslint index.js",
+    "build": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaposte/env-variables-from-branch-name.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "Atsuhiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alaposte/env-variables-from-branch-name/issues"
+  },
+  "homepage": "https://github.com/alaposte/env-variables-from-branch-name#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.25.1",
+    "eslint": "^7.14.0"
+  }
+}
